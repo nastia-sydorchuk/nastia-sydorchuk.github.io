@@ -1,129 +1,194 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+  <head>
+    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="./main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap" rel="stylesheet">
+  </head>
 
-	</head>
-	<body class="landing is-preload">
-		<div id="page-wrapper">
-
-      <header id="header" class="alt">
-        <h1>Anastasiia Sydorchuk</h1>
-        <nav id="nav">
-          <ul>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contact me</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <section id="banner">
-        <h2>My Portfolio</h2>
-        <a href="#projects" class="button">Check it out</a>
-      </section>
-
-      <section id="main" class="container">
-
-        <section class="box special" id="about">
-          <header class="major">
-            <h2>Hi, I am Anastasiia!</h2>
-            <p>A Software Developer with a year of experience in Frontend mainly working with: <br> JavaScript, Typescript, React, HTML, CSS, Sass. <br> Got 2 years of experience in customer support, suggesting to clients the best individual solutions, which enhanced my problem-solving skills. Have good analytical skills and a great level of responsibility. <br> Strive to implement all my skills and experience to creating high-performance web products to make a real impact.</p>
-          </header>
-        </section>
-
-        <div class="row" id="projects">
-          <div class="col-6 col-12-narrower">
-
-            <section class="box special">
-              <span class="image featured"><img src="images/luna.png" alt="luna" /></span>
-              <h3>Landing page for Luna</h3>
-              <p>A pixel-perfect landing page with responsive design techniques, so the website could be viewed on any device.
-              <b>Technologies:</b> HTML, CSS, Sass (SCSS), BEM, JavaScript.
-              </p>
-              <ul class="actions special">
-                <li><a href="https://nastia-sydorchuk.github.io/luna/" class="button alt">Demo</a></li>
-                <li><a href="https://github.com/nastia-sydorchuk/luna" class="button alt">GitHub Code</a></li>
-              </ul>
-            </section>
-
-          </div>
-          <div class="col-6 col-12-narrower">
-
-            <section class="box special">
-              <span class="image featured"><img src="images/mobphones.png" alt="phones" /></span>
-              <h3>Phone catalogue</h3>
-              <p>
-                Interactive page created using functional components, React Hooks, Fetch, URLSearchParams, localStorage. Implemented sorting, filtering, search.
-                <br>
-                <b>Technologies:</b> React, React Router (v6), Typescript, CSS, Sass (SCSS), BEM
-              </p>
-              </p>
-              <ul class="actions special">
-                <li><a href="#" class="button alt">Demo</a></li>
-                <li><a href="#" class="button alt">GitHub Code</a></li>
-              </ul>
-            </section>
-
-          </div>
-          <div class="col-6 col-12-narrower">
-
-            <section class="box special">
-              <span class="image featured"><img src="images/miami.png" alt="miami" /></span>
-              <h3>Landing page for Miami</h3>
-              <p>Responsive landing page.
-              <br>
-              <b>Technologies:</b> HTML, CSS, Sass (SCSS), BEM.</p>
-              <ul class="actions special">
-                <li><a href="#" class="button alt">Demo</a></li>
-                <li><a href="#" class="button alt">GitHub Code</a></li>
-              </ul>
-            </section>
-
-          </div>
-          <div class="col-6 col-12-narrower">
-
-            <section class="box special">
-              <span class="image featured"><img src="images/2048.png" alt="2048" /></span>
-              <h3>Game 2048</h3>
-              <p>Popular game written on pure JavaScript.
-                <br>
-                <b>Technologies:</b> JavaScript, HTML, CSS.
-              </p>
-              <ul class="actions special">
-                <li><a href="#" class="button alt">Demo</a></li>
-                <li><a href="#" class="button alt">GitHub Code</a></li>
-              </ul>
-            </section>
-
+  <body class="bg-light">
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+          <p class="navbar-brand mb-0 text-light">Anastasiia Sydorchuk</p>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link link-light" href="#about">About me</a></li>
+              <li class="nav-item"><a class="nav-link link-light" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link link-light" href="#contacts">Contact me</a></li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </header>
 
-      </section>
+    <section id="banner" class="banner position-relative">
+      <div class="banner-inner">
+        <div class="container">
+          <h1 class="fs-1 text-center text-light mb-3">My Portfolio</h1>
+          <a href="#projects" type="button" class="btn btn-outline-light d-grid col-5 col-md-3 mx-auto">Check it out</a>
+        </div>
+      </div>
+    </section>
 
-      <footer id="footer">
-        <ul class="icons" id="contacts">
-          <li><a href="https://www.linkedin.com/in/anastasiia-sydorchuk-08b8b4124/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-          <li><a href="https://wa.me/qr/HQR46G5BKVFGF1" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
-        </ul>
-      </footer>
+    <main id="main" class="mb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col col-md-8 position-absolute top-100 translate-middle-y">
+            <div class="rounded m-5 p-5 bg-white" id="about">
+              <h2 class="text-center border-bottom border-1 pb-4 mb-4 fw-light">Hi, I am Anastasiia!</h2>
+              <p class="fw-lighter">
+                A Software Developer with a year of experience in Frontend working with JavaScript, Typescript, React, HTML, CSS, Sass.
+                <br>
+                Got 2 years of experience in customer support, suggesting to clients the best individual solutions, which enhanced my problem-solving skills. Have good analytical skills and a great level of responsibility.
+                <br>
+                Strive to implement all my skills and experience to creating high-performance web products to make a real impact.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col mb-4">
+            <p class="text-center mb-2 fs-4 fw-light text-light bg-dark rounded-pill rounded-0">Some of my skills</p>
+            <ul class="list-group list-group-flush fw-lighter fs-6 rounded-pill">
+              <li class="list-group-item">Typescript, JavaScript (ES6)</li>
+              <li class="list-group-item">React</li>
+              <li class="list-group-item">HTML5, CSS3, Sass, BEM, Bootstrap, Bulma</li>
+              <li class="list-group-item">Fetch, REST API</li>
+              <li class="list-group-item">Git/Github, VS Code, Chrome Developer Tools (incl. React), NPM, Trello, Jira, Figma</li>
+              <li class="list-group-item">Algorithms: Solved 120 katas on CodeWars</li>
+              <li class="list-group-item">English: Advanced</li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
 
-		</div>
+      <div class="container">
+        <h2 class="fs-1 text-center mb-5 fw-light">Projects</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-5" id="projects">
+          <div class="col">
+            <div class="card h-100 text-center border-0">
+              <img class="card-img-top" src="images/luna.png" alt="luna" />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h3 class="card-title fw-light">Landing page for Luna</h3>
+                <p class="card-text fw-lighter">
+                  A pixel-perfect landing page with responsive design techniques, so the website could be viewed on any device.
+                  <br>
+                  <b>Technologies:</b> HTML, CSS, Sass (SCSS), BEM, JavaScript.
+                </p>
+                <div>
+                  <a href="https://nastia-sydorchuk.github.io/luna/" class="btn btn-outline-secondary">
+                    Demo
+                  </a>
+                  <a href="https://github.com/nastia-sydorchuk/luna" class="btn btn-outline-secondary">
+                    GitHub Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center border-0">
+              <img class="card-img-top" src="images/mobphones.png" alt="phones" />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h3 class="card-title fw-light">Phones catalogue</h3>
+                <p class="card-text fw-lighter">
+                  Interactive page created using functional components, React Hooks, Fetch, URLSearchParams, localStorage. 
+                  <br>
+                  Implemented sorting, filtering, search.
+                  <br>
+                  <b>Technologies:</b> React, React Router (v6), Typescript, CSS, Sass (SCSS), BEM
+                </p>
+                <div>
+                  <a href="https://nastia-sydorchuk.github.io/luna/" class="btn btn-outline-secondary">
+                    Demo
+                  </a>
+                  <a href="https://github.com/nastia-sydorchuk/luna" class="btn btn-outline-secondary">
+                    GitHub Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center border-0">
+              <img class="card-img-top" src="images/miami.png" alt="miami" />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h3 class="card-title fw-light">Landing page for Miami Condo Kings</h3>
+                <p class="card-text fw-lighter">
+                  Responsive landing page.
+                  <br>
+                  <b>Technologies:</b> HTML, CSS, Sass (SCSS), BEM.
+                </p>
+                <div>
+                  <a href="https://nastia-sydorchuk.github.io/luna/" class="btn btn-outline-secondary">
+                    Demo
+                  </a>
+                  <a href="https://github.com/nastia-sydorchuk/luna" class="btn btn-outline-secondary">
+                    GitHub Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center border-0">
+              <img class="card-img-top" src="images/2048.png" alt="2048" />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h3 class="card-title fw-light">Game 2048</h3>
+                <p class="card-text fw-lighter">
+                  Popular game written on pure JavaScript.
+                  <br>
+                  <b>Technologies:</b> JavaScript, HTML, CSS.
+                </p>
+                <div>
+                  <a href="https://nastia-sydorchuk.github.io/luna/" class="btn btn-outline-secondary">
+                    Demo
+                  </a>
+                  <a href="https://github.com/nastia-sydorchuk/luna" class="btn btn-outline-secondary">
+                    GitHub Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <footer class="footer bg-white p-5 text-center">
+      <div class="btn-group" id="contacts">
+        <a href="https://www.linkedin.com/in/anastasiia-sydorchuk-08b8b4124/" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin text-muted" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/qr/HQR46G5BKVFGF1" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp text-muted" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+          </svg>
+        </a>
+        <a href="" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github text-muted" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+        <a href="" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope text-muted" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-
-	</body>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>

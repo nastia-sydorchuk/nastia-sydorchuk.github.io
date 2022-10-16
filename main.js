@@ -1,7 +1,10 @@
 function isInView(elem) {
   const elemBottom = elem.getBoundingClientRect().bottom;
+  const elemTop = elem.getBoundingClientRect().top;
 
-  return elemBottom > 0;
+  console.log(elemBottom, elemTop, window.innerHeight)
+
+  return elemBottom > window.innerHeight / 4;
 }
 
 const banner = document.querySelector('.banner');

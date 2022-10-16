@@ -1,11 +1,10 @@
-/* :root {
-  --bs-body-font-family: 'Source Sans Pro', sans-serif;
-} */
+html {
+  overflow-x: hidden;
+}
 
 .banner {
   background: url(../../images/overlay.png), url(../../images/banner.jpeg) repeat fixed 100%;
   background-size: cover;
-  margin-bottom: 350px;
 }
 
 .banner-inner {
